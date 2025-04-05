@@ -32,10 +32,10 @@ This is a web-based Student Management System built using PHP, MySQL, HTML, CSS,
 - Create Tables:
 -Select the Students_for_Assesment database.
 - Run the following SQL commands in the SQL tab
-  CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(50) NOT NULL UNIQUE,
-    password VARCHAR(255) NOT NULL
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE students (
