@@ -49,3 +49,11 @@ CREATE TABLE students (
 
 ### Few output Images
 ![image](https://github.com/user-attachments/assets/45847def-70a6-48d6-984f-528af0791ed5)
+![image](https://github.com/user-attachments/assets/0dc0e3e7-d0bb-40f9-b7e7-bc48aac69864)
+![image](https://github.com/user-attachments/assets/f280b77d-695d-420d-9808-f617148abd0c)
+![image](https://github.com/user-attachments/assets/14f2bb0e-974b-49d0-82d8-ad584003f8b7)
+![image](https://github.com/user-attachments/assets/f7ca5627-0956-48f3-a218-ac1df9d04e1d)
+
+
+
+
