@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4A7A8C, #3D6775);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    background: #E8ECE3;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+
+h2 {
+    color: #2E4A5A;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    color: #2E4A5A;
+    font-size: 16px;
+}
+
+input {
+    padding: 12px;
+    border: 2px solid #6B9A9D;
+    border-radius: 5px;
+    font-size: 16px;
+    background: white;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #2E4A5A;
+    box-shadow: 0 0 5px rgba(46, 74, 90, 0.3);
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    background-color: #2E4A5A;
+    color: white;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #1F3643;
+    transform: translateY(-2px);
+}
+
+button[type="button"] {
+    background-color: #6B9A9D;
+    margin-top: 10px;
+}
+
+button[type="button"]:hover {
+    background-color: #4A7A8C;
+}
+
+.error {
+    color: #2E4A5A;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+    table-layout: auto;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+th {
+    background-color: #6B9A9D;
+    color: white;
+}
+
+th:nth-child(1), td:nth-child(1) { width: 20%; }
+th:nth-child(2), td:nth-child(2) { width: 10%; }
+th:nth-child(3), td:nth-child(3) { width: 25%; }
+th:nth-child(4), td:nth-child(4) { width: 15%; }
+th:nth-child(5), td:nth-child(5) { width: 25%; }
+
+.update-btn, .delete-btn {
+    padding: 5px 8px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    margin: 2px;
+}
+
+.update-btn { background-color: #6B9A9D; }
+.update-btn:hover { background-color: #4A7A8C; }
+.delete-btn { background-color: #2E4A5A; }
+.delete-btn:hover { background-color: #1F3643; }
+
+.logout-btn {
+    background-color: #2E4A5A;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+.logout-btn:hover {
+    background-color: #1F3643;
+}
+
+.add-btn {
+    background-color: #6B9A9D;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+.add-btn:hover {
+    background-color: #4A7A8C;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #E8ECE3;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination a {
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #6B9A9D;
+    margin: 2px;
+    color: #2E4A5A;
+}
+
+.pagination a.active {
+    background-color: #2E4A5A;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 20px;
+        margin: 20px;
+    }
+    .table-wrapper {
+        overflow-x: auto;
+    }
+    table {
+        min-width: 100%; 
+    }
+    th, td {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .update-btn, .delete-btn {
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+    td:last-child {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    input {
+        font-size: 14px;
+    }
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
